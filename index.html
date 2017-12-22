@@ -1,9 +1,9 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Agenda de Contactos</title>
-    <link rel="icon" href="assets/icons/labo-ico.ico">
+    <link rel="icon" href="assets/icons/agenda.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="vendors/Materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -23,9 +23,7 @@
           </ul>
         </div>
       </nav>
-    </header>
-    <section>
-      <!-- Modal Structure -->
+      <!-- Modal Contacto -->
       <div id="modal1" class="modal row">
 
         <div class="modal-content">
@@ -33,26 +31,27 @@
           <div class="col s5 offset-s1">
             <a class="btn btn-floating pulse card-panel black left"><i class="large material-icons">person</i></a>
             <div class="input-field col s10">
-              <input id="last_name" type="text" class="validate col s10" placeholder="Nombre">
+              <input id="name" type="text" class="validate col s10" placeholder="Nombre">
             </div>
           </div>
           <div class="col s6">
             <a class="btn btn-floating pulse card-panel black left"><i class="large material-icons">call</i></a>
             <div class="input-field col s10">
                <label for="first_name">Télefono</label>
-              <input id="last_name" type="text" class="validate col s10" placeholder="10 digitos">
+              <input id="number" type="text" class="validate col s10" placeholder="10 digitos">
             </div>
           </div>
-
-
         </div>
         <div class="modal-footer ">
           <div class="col offset-s1">
-            <a href="#" class="modal-action modal-close waves-effect waves-teal btn-flat left card-panel grey lighten-2 ">Agregar</a>
+            <a href="#" class="modal-action modal-close waves-effect waves-teal btn-flat left card-panel grey lighten-2" id="btn">Agregar</a>
           </div>
 
         </div>
       </div>
+    </header>
+    <section class="container">
+
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="vendors/Materialize/js/materialize.min.js"></script>
